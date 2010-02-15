@@ -32,7 +32,8 @@
 
 ;; user interface tuning
 (menu-bar-mode -1)
-(tool-bar-mode -1)
+(if window-system
+	(tool-bar-mode -1))
 (setq inhibit-startup-screen t)
 
 ;; coding system preferences
