@@ -22,10 +22,21 @@
 ;; automatically add a new line
 (setq require-final-newline t)
 
-;; smooth scrolling
+;; smooth scrolling for keyboard
 (setq scroll-margin 3
       scroll-step 1
       scroll-conservatively 10000)
+;; smooth scrolling for mouse wheel
+(defun mouse-smooth-scroll (increment)
+  (scroll-up increment) (sit-for 0.05)
+  (scroll-up increment) (sit-for 0.02)
+  (scroll-up increment) (sit-for 0.02)  
+  (scroll-up increment) (sit-for 0.05)
+  (scroll-up increment) (sit-for 0.06)
+  (scroll-up increment))
+
+(global-set-key [(mouse-5)] '(lambda() (interactive) (mouse-smooth-scroll 1)))
+(global-set-key [(mouse-4)] '(lambda() (interactive) (mouse-smooth-scroll -1)))
 
 ;; bigger kill ring
 (setq kill-ring-max 500)
@@ -52,3 +63,14 @@
 
 ;; start an emacs server
 (server-start)
+
+;; cursor color
+(set-cursor-color "Red")
+
+;; org mode configuration
+;; use org-mode for .org .org_archive and .txt by default
+(add-to-list 'auto-mode-alist 
+			 '("\\.\\(org\\|org_archive\\|txt\\)$" . org-mode))
+(global-set-key "\C-cl" 'org-store-link)
+(global-set-key "\C-ca" 'org-agenda)
+(global-set-key "\C-cb" 'org-iswitchb)
