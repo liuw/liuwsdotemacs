@@ -74,3 +74,13 @@
 (global-set-key "\C-cl" 'org-store-link)
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
+
+;; only use color theme for window system
+(if window-system
+	(progn
+	  (require 'color-theme)
+	  (setq-default color-theme-is-global t)
+	  (color-theme-initialize)
+	  (color-theme-comidia)
+	  )
+  )
