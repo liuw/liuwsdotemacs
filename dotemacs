@@ -79,9 +79,18 @@
 ;; use GTD style todo keywords
 (setq org-log-done t)
 (setq org-todo-keywords
-	  (list "TODO(t)" "STARTED(s!)" "DEFERRED(d!)" "|" 
+	  (list "TODO(t)" "STARTED(s!)" "WAITING(w!)" "|" 
 			"CANCELED(c)" "DONE(d)"))
-
+(setq org-agenda-files
+	  (list "~/git/org/personal.org"
+			"~/git/org/todo.org"
+			"~/git/org/project.org"
+			"~/git/org/opensource.org")
+	  )
+(defun todo ()
+  (interactive)
+  (find-file "~/git/org/todo.org")
+  )
 
 ;; only use color theme for window system
 (if window-system
