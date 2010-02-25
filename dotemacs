@@ -1,20 +1,5 @@
 ;; liuw's dotemacs file
-
-;; only useful with gui
-(setq frame-title-format "%b@emacs")
-
-;; display time and set time format
-(display-time)
-(setq display-time-24hr-format t)
-
-;; tweak editing experience
-(column-number-mode t)
-(transient-mark-mode t)
-(show-paren-mode t)
-;; (setq show-paren-style 'parenthesis)
-(setq show-paren-style 'mixed)
-;; (setq show-paren-style 'expression)
-;; (hl-line-mode t)
+;; please soft-link this file to .emacs
 
 ;; no backup files
 (setq make-backup-files nil)
@@ -41,12 +26,6 @@
 ;; bigger kill ring
 (setq kill-ring-max 500)
 
-;; user interface tuning
-(menu-bar-mode -1)
-(if window-system
-	(tool-bar-mode -1))
-(setq inhibit-startup-screen t)
-
 ;; coding system preferences
 (prefer-coding-system 'utf-8)
 (set-terminal-coding-system 'utf-8)
@@ -67,37 +46,7 @@
 ;; cursor color
 (set-cursor-color "Red")
 
-;; org mode configuration
-;;
-;; use org-mode for .org .org_archive and .txt by default
-(add-to-list 'auto-mode-alist 
-			 '("\\.\\(org\\|org_archive\\|txt\\)$" . org-mode))
-(global-set-key "\C-cl" 'org-store-link)
-(global-set-key "\C-ca" 'org-agenda)
-(global-set-key "\C-cb" 'org-iswitchb)
-(setq org-hide-leading-stars t)
-;; use GTD style todo keywords
-(setq org-log-done t)
-(setq org-todo-keywords
-	  (list "TODO(t)" "STARTED(s!)" "WAITING(w!)" "|" 
-			"CANCELED(c)" "DONE(d)"))
-(setq org-agenda-files
-	  (list "~/git/org/personal.org"
-			"~/git/org/todo.org"
-			"~/git/org/project.org"
-			"~/git/org/opensource.org")
-	  )
-(defun todo ()
-  (interactive)
-  (find-file "~/git/org/todo.org")
-  )
-
-;; only use color theme for window system
-(if window-system
-	(progn
-	  (require 'color-theme)
-	  (setq-default color-theme-is-global t)
-	  (color-theme-initialize)
-	  (color-theme-comidia)
-	  )
-  )
+;; load other dedicated configurations
+(mapc '(lambda (file)
+		 (load (file-name-sans-extension file)))
+	  (directory-files "." t "\\.el$"))
