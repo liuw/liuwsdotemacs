@@ -34,8 +34,8 @@
 ;; interactive switch buffer mode
 (iswitchb-mode t)
 
-;; default tab width is 2, change it to 4
-(setq default-tab-width 4)
+;; default tab width is 2, change it to 8
+(setq default-tab-width 8)
 
 ;; syntax highlight
 (global-font-lock-mode t)
