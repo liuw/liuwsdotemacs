@@ -46,7 +46,15 @@
 ;; cursor color
 (set-cursor-color "Red")
 
+;; menu bar, tool bar and scroll bar
+(menu-bar-mode -1)
+(setq tool-bar-mode nil)
+
 ;; load other dedicated configurations
 (mapc '(lambda (file)
 		 (load (file-name-sans-extension file)))
-	  (directory-files "." t "\\.el$"))
+	  (directory-files "~/.liuwsdotemacs" t "\\.el$"))
+
+;; load go emacs file
+(load "/home/liuw/go/misc/emacs/go-mode-load.el")
+(load "/home/liuw/go/misc/emacs/go-mode.el")
