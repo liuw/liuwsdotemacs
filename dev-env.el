@@ -5,7 +5,8 @@
   (setq c-basic-offset 8)
   (setq tab-width 8)
   (setq indent-tabs-mode t)
-  (show-ws-toggle-show-trailing-whitespace)
+  ;; (show-ws-toggle-show-trailing-whitespace)
+  (setq show-trailing-whitespace t)
   )
 
 (add-hook 'c-mode-common-hook 'c/c++-conf)
