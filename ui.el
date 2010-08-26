@@ -14,7 +14,7 @@
 (setq show-paren-style 'mixed)
 ;; (setq show-paren-style 'expression)
 ;; (hl-line-mode t)
-
+(scroll-bar-mode -1)
 ;; user interface tuning
 (menu-bar-mode -1)
 (if window-system
