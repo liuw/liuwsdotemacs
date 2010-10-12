@@ -1,5 +1,7 @@
-Liuw's dotemacs file
+liuw's dotemacs file
 
-Author: Wei Liu <liuw@liuw.name>
+Author: Wei LIU <liuw@liuw.name>
 
 This is my personal emacs configurations.
+
+Startup files dedicated to certain topics are to be place in the `init-files` directory, which will be loaded according to their alphabet order.
