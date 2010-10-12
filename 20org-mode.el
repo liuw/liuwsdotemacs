@@ -1,4 +1,4 @@
-;; org mode configuration
+;; liuw's org mode configuration
 ;;
 ;; use org-mode for .org .org_archive and .txt by default
 (add-to-list 'auto-mode-alist 
@@ -7,6 +7,7 @@
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
 (setq org-hide-leading-stars t)
+
 ;; use GTD style todo keywords
 (setq org-log-done t)
 (setq org-todo-keywords

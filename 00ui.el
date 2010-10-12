@@ -1,3 +1,4 @@
+;; liuw's emacs ui tuning file
 
 ;; only useful with gui
 (setq frame-title-format "%b@emacs")
@@ -14,8 +15,9 @@
 (setq show-paren-style 'mixed)
 ;; (setq show-paren-style 'expression)
 ;; (hl-line-mode t)
-(scroll-bar-mode -1)
+
 ;; user interface tuning
+(scroll-bar-mode -1)
 (menu-bar-mode -1)
 (if window-system
 	(tool-bar-mode -1))
@@ -30,3 +32,6 @@
 	  (color-theme-comidia)
 	  )
   )
+
+;; cursor color
+(set-cursor-color "Red")
