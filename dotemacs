@@ -50,5 +50,5 @@
 ;; 	  (directory-files "~/.liuwsdotemacs" t "\\.el$"))
 
 ;; load ordered init files
-(load-file "~/liuwsdotemacs/utils.el")
-(liuw-load-ordered-startup-el "~/liuwsdotemacs/init-files")
+(load-file "~/git/liuwsdotemacs/utils.el")
+(liuw-load-ordered-startup-el "~/git/liuwsdotemacs/init-files")

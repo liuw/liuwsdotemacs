@@ -5,3 +5,5 @@ Author: Wei LIU <liuw@liuw.name>
 This is my personal emacs configurations.
 
 Startup files dedicated to certain topics are to be place in the `init-files` directory, which will be loaded according to their alphabet order.
+
+All local configurations go into init-files/99local-conf.el, which will be loaded as the last conf file.
