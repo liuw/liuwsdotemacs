@@ -2,7 +2,18 @@
 ;; please soft-link this file to .emacs
 
 ;; no backup files
-(setq make-backup-files nil)
+;; (setq make-backup-files nil)
+
+;; keep backfiles in specified directory
+(setq version-control t)
+(setq kept-old-versions 2)
+(setq kept-new-versions 5)
+(setq delete-old-versions t)
+(setq backup-directory-alist '(("." . "~/backups")))
+(setq backup-by-copying t)
+
+;; shorter answer
+(fset 'yes-or-no-p 'y-or-n-p)
 
 ;; automatically add a new line
 (setq require-final-newline t)

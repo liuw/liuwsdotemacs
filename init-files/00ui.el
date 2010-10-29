@@ -35,3 +35,6 @@
 
 ;; cursor color
 (set-cursor-color "Red")
+
+;; move mouse pointer when it overlaps cursor
+(mouse-avoidance-mode 'animate)
