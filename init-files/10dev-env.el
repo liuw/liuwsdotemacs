@@ -1,11 +1,14 @@
 ;; development environment configuration
 (defun c/c++-conf ()
   (hs-minor-mode)
-  (c-set-style "linux")
-  (setq c-basic-offset 8)
-  (setq tab-width 8)
-  (setq indent-tabs-mode t)
+;;  (c-set-style "linux")
+;;  (setq c-basic-offset 8)
+;;  (setq tab-width 8)
+;;  (setq indent-tabs-mode t)
   ;; (show-ws-toggle-show-trailing-whitespace)
+  (c-set-style "bsd")
+  (setq c-basic-offset 4)
+  (setq indent-tabs-mode nil)
   (setq show-trailing-whitespace t)
   )
 
@@ -13,4 +16,4 @@
 (add-hook 'c++-mode-hook 'c++-mode-hook)
 (add-hook 'lisp-mode-hook 'hs-minor-mode)
 
-(add-hook 'before-save-hook 'delete-trailing-whitespace)
+;;(add-hook 'before-save-hook 'delete-trailing-whitespace)

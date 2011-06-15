@@ -20,7 +20,9 @@
 (scroll-bar-mode -1)
 (menu-bar-mode -1)
 (if window-system
-	(tool-bar-mode -1))
+    (progn
+     (tool-bar-mode -1)
+     (tabbar-mode t)))
 (setq inhibit-startup-screen t)
 
 ;; only use color theme for window system
@@ -29,7 +31,8 @@
 	  (require 'color-theme)
 	  (setq-default color-theme-is-global t)
 	  (color-theme-initialize)
-	  (color-theme-comidia)
+;;	  (color-theme-comidia)
+	  (color-theme-calm-forest)
 	  )
   )
 

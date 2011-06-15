@@ -52,7 +52,7 @@
 (global-font-lock-mode t)
 
 ;; start an emacs server
-(server-start)
+;; (server-start)
 
 
 ;; load other dedicated configurations
@@ -63,3 +63,5 @@
 ;; load ordered init files
 (load-file "~/git/liuwsdotemacs/utils.el")
 (liuw-load-ordered-startup-el "~/git/liuwsdotemacs/init-files")
+
+(which-func-mode)
