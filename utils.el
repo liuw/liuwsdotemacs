@@ -27,5 +27,6 @@
 	  (load-file (car l))
 	  (setq l (cdr l)))))
 
-(defun liuw-sudo-find-file (file dir)
-  (find-file (concat "/sudo:localhost:" (expand-file-name file dir))))
+(defun liuw-sudo-find-file (file)
+  (interactive "FFile: ")
+  (find-file (concat "/sudo:localhost:" (expand-file-name file))))
