@@ -42,8 +42,7 @@
 (set-terminal-coding-system 'utf-8)
 (set-keyboard-coding-system 'utf-8)
 
-;; interactive switch buffer mode
-(iswitchb-mode t)
+(ido-mode t)
 
 ;; default tab width is 2, change it to 8
 (setq default-tab-width 8)
