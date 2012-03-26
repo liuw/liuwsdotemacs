@@ -12,6 +12,11 @@
 (setq backup-directory-alist '(("." . "~/backups")))
 (setq backup-by-copying t)
 
+;; remember cursor position
+(setq save-place-file "~/.emacs.d/save-place-file")
+(setq-default save-place t)
+(require 'saveplace)
+
 ;; shorter answer
 (fset 'yes-or-no-p 'y-or-n-p)
 
