@@ -19,7 +19,8 @@
 
 ;;(add-hook 'before-save-hook 'delete-trailing-whitespace)
 
-(require 'vc)
-(remove-hook 'find-file-hook 'vc-find-file-hook)
+;; completely remove Git from vc-mode backends, maybe use magit in the future?
+(setq vc-handled-backends (quote (RCS CVS SVN SCCS Bzr Hg Mtn Arch)))
+
 (require 'xcscope)
 
