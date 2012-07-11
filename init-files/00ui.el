@@ -17,12 +17,12 @@
 ;; (hl-line-mode t)
 
 ;; user interface tuning
-(scroll-bar-mode -1)
 (menu-bar-mode -1)
 (if window-system
     (progn
-     (tool-bar-mode -1)
-     (tabbar-mode t)))
+      (scroll-bar-mode -1)
+      (tool-bar-mode -1)
+      (tabbar-mode t)))
 (setq inhibit-startup-screen t)
 
 ;; only use color theme for window system
