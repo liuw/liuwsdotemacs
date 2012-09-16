@@ -22,5 +22,5 @@
 ;; completely remove Git from vc-mode backends, maybe use magit in the future?
 (setq vc-handled-backends (quote (RCS CVS SVN SCCS Bzr Hg Mtn Arch)))
 
-(require 'xcscope)
+;; (require 'xcscope)
 
