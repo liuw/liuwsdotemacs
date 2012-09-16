@@ -17,7 +17,9 @@
 ;; (hl-line-mode t)
 
 ;; user interface tuning
-(menu-bar-mode -1)
+(if (or (not (string= system-type "darwin"))
+	 (not window-system))
+    (menu-bar-mode -1))
 (blink-cursor-mode -1)
 (if window-system
     (progn
