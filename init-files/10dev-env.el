@@ -17,7 +17,7 @@
 (add-hook 'c++-mode-hook 'c++-mode-hook)
 (add-hook 'lisp-mode-hook 'hs-minor-mode)
 
-;;(add-hook 'before-save-hook 'delete-trailing-whitespace)
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 ;; completely remove Git from vc-mode backends, maybe use magit in the future?
 (setq vc-handled-backends (quote (RCS CVS SVN SCCS Bzr Hg Mtn Arch)))
