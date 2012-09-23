@@ -16,6 +16,9 @@
 (add-hook 'c-mode-common-hook 'c/c++-conf)
 (add-hook 'c++-mode-hook 'c++-mode-hook)
 (add-hook 'lisp-mode-hook 'hs-minor-mode)
+(add-hook 'python-mode-hook 'hs-minor-mode)
+(add-hook 'c-mode-common-hook 'hs-minor-mode)
+
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
