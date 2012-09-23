@@ -2,12 +2,12 @@ liuw's dotemacs file
 
 Author: Wei LIU <liuw@liuw.name>
 
-This is my personal emacs configurations.
+This is my personal Emacs configurations.
 
-Startup files dedicated to certain topics are to be place in the `init-files` directory, which will be loaded according to their alphabet order.
+Startup files dedicated to certain topics are to be placed in the `init-files` directory, which will be loaded according to their alphabetic order.
 
 All local configurations go into init-files/99local-conf.el, which will be loaded as the last conf file.
 
-In order to omit changes in 99local-conf.el, we should use in every clone:
+In order to omit changes in 99local-conf.el, we should use following command in every clone:
 
 % git update-index --assume-unchanged init-files/99local-conf.el
