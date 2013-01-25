@@ -27,3 +27,4 @@
 
 ;; (require 'xcscope)
 
+(which-func-mode)

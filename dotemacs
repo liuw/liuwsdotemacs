@@ -68,4 +68,3 @@
 (load-file "~/git/liuwsdotemacs/utils.el")
 (liuw-load-ordered-startup-el "~/git/liuwsdotemacs/init-files")
 
-(which-func-mode)
