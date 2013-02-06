@@ -58,12 +58,6 @@
 ;; start an emacs server
 ;; (server-start)
 
-
-;; load other dedicated configurations
-;; (mapc '(lambda (file)
-;; 		 (load (file-name-sans-extension file)))
-;; 	  (directory-files "~/.liuwsdotemacs" t "\\.el$"))
-
 ;; load ordered init files
 (load-file "~/git/liuwsdotemacs/utils.el")
 (liuw-load-ordered-startup-el "~/git/liuwsdotemacs/init-files")
