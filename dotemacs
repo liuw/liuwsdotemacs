@@ -23,6 +23,9 @@
 ;; automatically add a new line
 (setq require-final-newline t)
 
+;; Delete selection on insert
+(delete-selection-mode t)
+
 ;; smooth scrolling for keyboard
 (setq scroll-margin 3
       scroll-step 1
