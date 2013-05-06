@@ -1,7 +1,7 @@
 ;; liuw's emacs ui tuning file
 
 ;; only useful with gui
-(setq frame-title-format "%b@emacs")
+(setq frame-title-format '("%b%@" (:eval (system-name))))
 
 ;; display time and set time format
 (display-time)
