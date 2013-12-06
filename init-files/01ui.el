@@ -33,7 +33,7 @@
 	(progn
 	  (require 'color-theme)
 	  (setq-default color-theme-is-global t)
-	  (color-theme-initialize)
+;;	  (color-theme-initialize)
 ;;	  (color-theme-comidia)
 	  (color-theme-calm-forest)
 	  )
