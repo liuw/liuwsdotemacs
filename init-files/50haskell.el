@@ -6,3 +6,6 @@
 ;;
 
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
+
+;; Use flycheck for realtime checking
+(add-hook 'haskell-mode-hook 'flycheck-mode)
