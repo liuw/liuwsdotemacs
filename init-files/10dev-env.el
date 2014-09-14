@@ -11,7 +11,7 @@
 ;;  (setq c-basic-offset 4)
 ;;  (setq indent-tabs-mode nil)
 ;;  (setq show-trailing-whitespace t)
-  (gtags-mode 1)
+    (gtags-mode 1)
   )
 
 (add-hook 'c-mode-common-hook 'c/c++-conf)
