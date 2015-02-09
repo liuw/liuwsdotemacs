@@ -44,3 +44,8 @@
 
 ;; move mouse pointer when it overlaps cursor
 (mouse-avoidance-mode 'animate)
+
+;; Global highlight line mode. Need xterm-256color or alike to
+;; function properly.
+(global-hl-line-mode)
+(set-face-background hl-line-face "gray14")
