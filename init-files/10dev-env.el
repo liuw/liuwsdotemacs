@@ -10,7 +10,7 @@
 ;;  (c-set-style "bsd")
 ;;  (setq c-basic-offset 4)
 ;;  (setq indent-tabs-mode nil)
-  (highlight-lines-matching-regexp ".\{81\}" 'hi-green)
+  (highlight-lines-matching-regexp ".\\{81\\}" 'hi-green)
   (gtags-mode 1)
   )
 
