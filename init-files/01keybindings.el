@@ -1,7 +1,15 @@
 ;; Useful key bindings go here
 
+(defun switch-to-previous-buffer ()
+  "Switch to previously open buffer.
+Repeated invocations toggle between the two most recently open buffers."
+  (interactive)
+  (switch-to-buffer (other-buffer (current-buffer) 1)))
+
+
 (global-set-key (kbd "C-h a") 'apropos)
 
+(global-set-key [f1] 'switch-to-previous-buffer)
 (global-set-key [f2] 'previous-buffer)
 (global-set-key [f3] 'next-buffer)
 
