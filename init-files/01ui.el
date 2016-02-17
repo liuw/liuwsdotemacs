@@ -47,5 +47,7 @@
 
 ;; Global highlight line mode. Need xterm-256color or alike to
 ;; function properly.
-(global-hl-line-mode)
-(set-face-background hl-line-face "gray14")
+(if (not window-system)
+    (progn
+        (global-hl-line-mode)
+        (set-face-background hl-line-face "gray14")))
