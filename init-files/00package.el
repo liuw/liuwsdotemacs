@@ -1,4 +1,4 @@
-(if (string< "24" emacs-version)
+(if (string< emacs-version "24")
     (progn (require 'package)
            (add-to-list 'package-archives
                         '("marmalade" .
