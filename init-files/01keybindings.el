@@ -9,9 +9,10 @@ Repeated invocations toggle between the two most recently open buffers."
 
 (global-set-key (kbd "C-h a") 'apropos)
 
-(global-set-key [f1] 'switch-to-previous-buffer)
-(global-set-key [f2] 'previous-buffer)
-(global-set-key [f3] 'next-buffer)
+(global-set-key [f1] 'ido-switch-buffer)
+(global-set-key [f2] 'switch-to-previous-buffer)
+(global-set-key [f3] 'previous-buffer)
+(global-set-key [f4] 'next-buffer)
 
 
 (global-set-key [f7] 'kmacro-start-macro-or-insert-counter)
