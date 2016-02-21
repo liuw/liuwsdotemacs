@@ -35,7 +35,8 @@
 	  (setq-default color-theme-is-global t)
 ;;	  (color-theme-initialize)
 ;;	  (color-theme-comidia)
-	  (color-theme-calm-forest)
+;;	  (color-theme-calm-forest)
+;;          (color-theme-monokai)
 	  )
   )
 
