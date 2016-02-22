@@ -23,5 +23,8 @@ Repeated invocations toggle between the two most recently open buffers."
 (global-set-key [f6] 'jump-to-register)
 
 ;; Disable suspend when running in GUI mode
+(defun ignore-c-z ()
+  (interactive)
+  (message "C-z is ignored, use C-x C-z to suspend"))
 (if (window-system)
-  (global-set-key (kbd "C-z") 'ignore))
+  (global-set-key (kbd "C-z") 'ignore-c-z))
