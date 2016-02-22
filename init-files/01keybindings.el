@@ -21,3 +21,7 @@ Repeated invocations toggle between the two most recently open buffers."
 
 (global-set-key [f5] 'point-to-register)
 (global-set-key [f6] 'jump-to-register)
+
+;; Disable suspend when running in GUI mode
+(if (window-system)
+  (global-set-key (kbd "C-z") 'ignore))
