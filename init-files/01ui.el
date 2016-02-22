@@ -52,3 +52,7 @@
     (progn
         (global-hl-line-mode)
         (set-face-background hl-line-face "gray14")))
+
+;; No more annoying bells
+(setq visible-bell nil)
+(setq ring-bell-function 'ignore)
