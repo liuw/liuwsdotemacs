@@ -11,7 +11,7 @@
 ;;  (setq c-basic-offset 4)
 ;;  (setq indent-tabs-mode nil)
   (highlight-lines-matching-regexp ".\\{81\\}" 'hi-green)
-  (gtags-mode 1)
+  (helm-gtags-mode 1)
   )
 
 (add-hook 'c-mode-common-hook 'c/c++-conf)
