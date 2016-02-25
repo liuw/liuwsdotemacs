@@ -28,3 +28,7 @@ Repeated invocations toggle between the two most recently open buffers."
   (message "C-z is ignored, use C-x C-z to suspend"))
 (if (window-system)
   (global-set-key (kbd "C-z") 'ignore-c-z))
+
+
+;; Use helm-M-x, require helm package(s)
+(global-set-key (kbd "M-x") 'helm-M-x)
