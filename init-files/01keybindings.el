@@ -30,5 +30,6 @@ Repeated invocations toggle between the two most recently open buffers."
   (global-set-key (kbd "C-z") 'ignore-c-z))
 
 
-;; Use helm-M-x, require helm package(s)
-(global-set-key (kbd "M-x") 'helm-M-x)
+;; Use helm-M-x if available
+(if (fboundp 'helm-M-x)
+    (global-set-key (kbd "M-x") 'helm-M-x))
