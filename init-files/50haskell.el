@@ -5,7 +5,11 @@
 ;; C-c C-b: start interpreter
 ;;
 
-(add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
+(defun haskell-conf ()
+  (turn-on-haskell-indent)
+  (electric-indent-mode -1))
+
+(add-hook 'haskell-mode-hook 'haskell-conf)
 
 ;; Use flycheck for realtime checking
 (add-hook 'haskell-mode-hook 'flycheck-mode)
