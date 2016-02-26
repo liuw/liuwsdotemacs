@@ -7,9 +7,7 @@
 
 (defun haskell-conf ()
   (turn-on-haskell-indent)
-  (electric-indent-mode -1))
+  (electric-indent-mode -1)
+  (flycheck-mode 1))
 
 (add-hook 'haskell-mode-hook 'haskell-conf)
-
-;; Use flycheck for realtime checking
-(add-hook 'haskell-mode-hook 'flycheck-mode)
